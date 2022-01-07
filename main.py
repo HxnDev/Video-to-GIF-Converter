@@ -2,9 +2,9 @@ from moviepy.editor import *
 
 
 def convert_mp4_to_jpgs(path):
-    clip = VideoFileClip(path).subclip((0,19.00),(0,25.0)).resize(0.3)
-    clip.write_gif("counter.gif")
+    clip = VideoFileClip(path).resize(0.2)
+    clip.write_gif("obscure.gif")
 
 
 if __name__ == "__main__":
-    convert_mp4_to_jpgs("Empty Counter Detection (Full Video).mp4")
+    convert_mp4_to_jpgs("Obscure.mp4")
